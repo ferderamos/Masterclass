@@ -1,0 +1,42 @@
+Imports System
+				
+Public Module Module1
+	Public Sub Main()
+		Console.WriteLine("Hello World")
+        Console.WriteLine("Seleccione un combo")
+        Console.WriteLine("1- Hamburguesa sola")
+        Console.WriteLine("2- Hamburguesa con queso")
+        Console.WriteLine("3- Patitas de pollo")
+        Dim input = Console.ReadLine()
+        Dim precio as Double
+        If input = "1" Then
+            precio = 300.00
+        ElseIf input = "2" Then
+            precio = 450.00
+        ElseIf input = "3" Then
+            precio = 250
+        Else
+            Console.WriteLine("Ingresó una opción inválida")
+        End If
+        
+        Console.WriteLine("El precio es: " + precio.ToString())
+        
+            
+		'Dim h1 as New Hamburguesa
+		'h1.cantidadBifes = 1
+		'h1.tieneQueso = False
+		
+		'Dim texto as  String
+		'If h1.tieneQueso = True Then 
+        '	texto = "si"
+		'Else
+		'texto = "no"
+		'End If
+		
+		'Console.WriteLine("usted pidió una hamburguesa con " + h1.cantidadBifes.ToString() + " bife(s)")
+		'Console.WriteLine("y " + texto + " tiene queso")
+		
+		
+		Console.WriteLine("FIN")
+	End Sub
+End Module
